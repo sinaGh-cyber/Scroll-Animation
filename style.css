@@ -12,5 +12,37 @@ body {
   justify-content: center;
   overflow-x: hidden;
   margin: 0;
+  background-color: #efedd6;
 }
 
+h1 {
+  margin: 10px;
+}
+
+.box {
+  margin: 10px;
+  color: #fff;
+  background-color: steelblue;
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 2px 4px 2px rgba(8, 8, 8, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.8s ease;
+}
+
+.box:nth-child(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 45px;
+}
