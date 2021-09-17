@@ -40,7 +40,7 @@ h1 {
 }
 
 .box.show {
-  transform: translateX(0);
+  transform: translateX(0px);
 }
 
 .box h2 {
